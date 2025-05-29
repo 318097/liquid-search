@@ -1,0 +1,243 @@
+@import "theme.scss";
+@import "@codedrops/react-ui/dist/styles/colors.scss";
+
+// @font-face {
+//   font-family: 'Roboto Mono';
+//   src: url("../assets/fonts/CascadiaMono-Regular.woff2");
+// }
+
+// @font-face {
+//   font-family: Cascadia-Light;
+//   src: url("../assets/fonts/CascadiaMonoPL-Light.woff2");
+// }
+
+// @font-face {
+//   font-family: Cascadia-Bold;
+//   src: url("../assets/fonts/CascadiaMonoPL-Bold.woff2");
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono";
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-family: "Roboto Mono";
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  width: max-content;
+}
+
+main {
+  font-family: "Roboto Mono";
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  .header-background {
+    background: $PRIME;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px dashed gray;
+  }
+  .content-background {
+    width: 100%;
+    flex-grow: 1;
+    min-height: calc(100vh - 58px);
+  }
+}
+
+main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 58px;
+}
+
+.actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  background: #1e1f22;
+  footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+main header,
+section,
+footer {
+  width: 96%;
+  max-width: 1024px;
+  padding: 12px 2%;
+}
+
+div.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+code {
+  color: $nbPink;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+pre {
+  overflow: auto;
+  border: 1px dashed $iron;
+  background: $PRIME;
+  border-radius: 4px;
+  padding: 16px 12px;
+  line-height: 1.4rem;
+  margin: 0;
+  font-size: 14px;
+  // animation: 6s infinite fade;
+  & > code {
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    padding: 0;
+    background: none;
+    color: $strokeOne;
+    font-weight: normal;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  &:hover span {
+    text-decoration: underline;
+  }
+}
+
+.no-padding button {
+  min-width: 0;
+  width: max-content;
+}
+
+.link {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  margin: 16px auto;
+  width: 80%;
+  border-top-width: 0.5px;
+}
+
+.fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.not-found,
+.empty {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0.6;
+  color: $steel;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #3e3e3e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #646464;
+}
+
+// .loading {
+//   position: absolute;
+//   z-index: 1000;
+//   top: calc(50% - 20px);
+//   left: calc(50% - 20px);
+// }
+
+#buy-me-a-coffee {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  z-index: 100;
+  animation: delay 1s 7s forwards;
+  opacity: 0;
+  img {
+    height: 30px;
+  }
+}

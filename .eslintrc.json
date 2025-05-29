@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "next", "next/core-web-vitals"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "react/prop-types": "off",
+    "import/no-unresolved": "error",
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "warn",
+    "no-unused-labels": "warn",
+    "no-var": "warn",
+    "import/named": "warn",
+    "import/export": "warn",
+    "import/no-duplicates": "warn",
+    "import/first": "warn",
+    "no-empty": "warn",
+    "import/order": [
+      "off",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/exports-last": "warn",
+    "import/newline-after-import": "warn",
+    "react/no-multi-comp": "off",
+    "no-console": "off",
+    "eqeqeq": "warn",
+    "no-else-return": "warn"
+  }
+}

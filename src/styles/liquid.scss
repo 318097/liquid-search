@@ -1,0 +1,77 @@
+@import "theme.scss";
+@import "@codedrops/react-ui/dist/styles/colors.scss";
+
+.liquid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  gap: 12px;
+  width: 100%;
+  .liquid {
+    padding: 12px;
+    height: 108px;
+    border-radius: 4px;
+    transition: 0.2s;
+    background: $PRIME;
+    border: 1px dashed transparent;
+    width: 100%;
+    .content-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      height: 100%;
+    }
+    .title {
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+    .url {
+      margin-top: 2px;
+      font-size: 0.6rem;
+      line-height: 0.8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      color: $steel;
+      word-break: break-all;
+    }
+    .tag-list {
+      margin-top: 4px;
+    }
+  }
+}
+
+.liquid:hover,
+.liquid.highlighted {
+  opacity: 0.8;
+  // color: $foBlue;
+}
+
+.liquid .visited {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  svg {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+.liquid.starred {
+  // box-shadow: 0px 0px 5px 0px #f0cb70a1;
+  // border-color: #f0cb70a1;
+}
+
+.mantine-Tooltip-tooltip {
+  font-size: 0.7rem !important;
+  line-height: normal !important;
+}

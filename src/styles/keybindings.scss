@@ -1,0 +1,78 @@
+@import "theme.scss";
+@import "@codedrops/react-ui/dist/styles/colors.scss";
+
+.groupped-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  .group {
+    .group-title {
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
+.keybindings-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  width: 100%;
+  gap: 12px;
+  width: 100%;
+  .keybinding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    padding: 12px;
+    height: 76px;
+    border-radius: 4px;
+    transition: 0.2s;
+    gap: 12px;
+    background: $PRIME;
+    border: 1px dashed transparent;
+    .title {
+      font-size: 0.8rem;
+      line-height: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      margin-bottom: 2px;
+    }
+    .hotkey {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.keybinding:hover {
+  opacity: 0.8;
+}
+
+.keybinding.highlighted {
+  color: $foBlue;
+  border: 1px dashed;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 16px;
+  margin: 0 auto;
+  .action {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    :nth-child(1) {
+      flex: 1;
+    }
+  }
+}

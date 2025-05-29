@@ -1,0 +1,86 @@
+@import "theme.scss";
+
+.posts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 12px;
+}
+
+.splitter {
+  text-align: center;
+  margin: 20px;
+}
+
+.actions-row {
+  text-align: center;
+  margin: 10px;
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 12px;
+  .product-item {
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 2px;
+    display: inline-block;
+    width: 100%;
+    height: 98px;
+    background: $PRIME;
+    .product-title {
+      font-size: 0.9rem;
+    }
+    .product-description {
+      line-height: 1rem;
+      font-size: 0.8rem;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.coming-soon {
+  width: 100%;
+  height: 160px;
+  background: $PRIME;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.mantine-Input-input,
+.mantine-Select-input,
+.total-count,
+.mantine-Button-root,
+.field-bg {
+  background: #15181f !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+
+.small {
+  font-size: 0.6rem;
+}
+
+.medium {
+  font-size: 0.8rem;
+}
+
+.liquid-icon {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
