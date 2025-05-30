@@ -9,7 +9,7 @@ import { Tooltip } from "@mantine/core";
 import { IconWrapper } from "../../lib/UI";
 
 const parseURL = (url) => {
-  const qs = `ref=code404.co`;
+  const qs = `ref=liquidsearch.co`;
   return url.includes("?") ? `${url}&${qs}` : `${url}?${qs}`;
 };
 

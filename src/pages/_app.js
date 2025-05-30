@@ -16,13 +16,13 @@ import "../styles/index.scss";
 import { setAppRoute } from "../store/app/actions";
 import { LoaderWrapper } from "../lib/UI";
 import Footer from "../components/Footer";
-import { initAnalytics } from "../firebase";
+// import { initAnalytics } from "../firebase";
 import { initialize } from "../lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 
 axios.defaults.baseURL = config.SERVER_URL;
 // axios.defaults.headers.common["authorization"] = getToken();
-axios.defaults.headers.common["external-source"] = "CODE404";
+axios.defaults.headers.common["external-source"] = "LIQUID_SEARCH";
 
 const CrispWithNoSSR = dynamic(() => import("../lib/Crisp"), {
   ssr: false,
@@ -46,8 +46,8 @@ const App = ({ children }) => {
   useEffect(() => {
     tracker.track("INIT");
     if (config.IS_PROD) {
-      hotjar.initialize(config.HJ_ID, 6);
-      initAnalytics();
+      // hotjar.initialize(config.HJ_ID, 6);
+      // initAnalytics();
     }
     dispatch(setAppRoute(router.asPath));
     initialize();
@@ -95,10 +95,10 @@ function Layout({ Component, pageProps, ...rest }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <meta
+        {/* <meta
           name="google-adsense-account"
           content="ca-pub-1213904748793222"
-        ></meta>
+        ></meta> */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

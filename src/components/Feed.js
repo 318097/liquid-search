@@ -41,6 +41,7 @@ const date = new Date().getDate();
 
 const Feed = () => {
   const layout = useSelector((store) => store.app.layout);
+
   const feedData = useSelector((store) => store.app.feedData);
   const dispatch = useDispatch();
   const total = useSelector((store) => getTotalCount(store));

@@ -133,39 +133,39 @@ const Apps = (props) => {
 
 export default Apps;
 
-export async function getStaticPaths() {
-  const paths = config.liquidRoutes.map((id) => {
-    return {
-      params: {
-        id,
-      },
-    };
-  });
+// export async function getStaticPaths() {
+//   const paths = config.liquidRoutes.map((id) => {
+//     return {
+//       params: {
+//         id,
+//       },
+//     };
+//   });
 
-  return {
-    paths,
-    // Set fallback to blocking. Now any new post added post build will SSR
-    // to ensure SEO. It will then be static for all subsequent requests
-    fallback: "blocking",
-  };
-}
+//   return {
+//     paths,
+//     // Set fallback to blocking. Now any new post added post build will SSR
+//     // to ensure SEO. It will then be static for all subsequent requests
+//     fallback: "blocking",
+//   };
+// }
 
-export const getStaticProps = wrapper.getStaticProps(
-  (store) =>
-    async ({ params }) => {
-      const liquid = await getLiquid();
+// export const getStaticProps = wrapper.getStaticProps(
+//   (store) =>
+//     async ({ params }) => {
+//       const liquid = await getLiquid();
 
-      store.dispatch(
-        updateFeedData({
-          ...liquid,
-        })
-      );
-      store.dispatch(setLiquidData(liquid));
+//       store.dispatch(
+//         updateFeedData({
+//           ...liquid,
+//         })
+//       );
+//       store.dispatch(setLiquidData(liquid));
 
-      return {
-        props: {
-          type: params.id,
-        },
-      };
-    }
-);
+//       return {
+//         props: {
+//           type: params.id,
+//         },
+//       };
+//     }
+// );

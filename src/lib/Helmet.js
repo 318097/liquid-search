@@ -10,7 +10,7 @@ const Helmet = (props) => {
     title = "",
     description = "",
     image = DEFAULT_IMAGE,
-    pageTitleSuffix = " | Code404",
+    pageTitleSuffix = " | LiquidSearch",
   } = props;
 
   // const currentURL = window.location.href;

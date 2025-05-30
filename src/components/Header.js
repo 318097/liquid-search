@@ -113,28 +113,19 @@ const Header = () => {
   return (
     <header>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <Link href={"/"} passHref>
-          <Image
-            src={logo}
-            alt="Code404 logo"
-            height={22}
-            width={80}
-            style={{
-              position: "relative",
-              left: "-4px",
-            }}
-          />
+        <Link href={"/"} passHref style={{ fontWeight: "bold" }}>
+          Liquid Search
         </Link>
-        <span className="small">{msg}</span>
+        {/* <span className="small">{msg}</span> */}
         {/* <Breadcrumbs separator="→" mt="xs">
           {items}
         </Breadcrumbs> */}
       </div>
-      <div className="filters">
+      {/* <div className="filters">
         {filterList.map((filter, idx) => (
           <Fragment key={idx}>{filter.component}</Fragment>
         ))}
-      </div>
+      </div> */}
     </header>
   );
 };

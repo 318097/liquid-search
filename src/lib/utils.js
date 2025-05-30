@@ -89,7 +89,7 @@ const FEED_LAYOUT = [
     href: "/posts",
     contentContainerClass: "posts-wrapper",
     color: colors.nbPink,
-    visible: true,
+    visible: false,
     titlePath: "posts.selectedPost.title",
   },
   {
@@ -101,7 +101,7 @@ const FEED_LAYOUT = [
     href: "/keybindings",
     contentContainerClass: "keybindings-wrapper",
     color: colors.foBlue,
-    visible: true,
+    visible: false,
   },
   {
     type: "LIQUID",
@@ -113,7 +113,7 @@ const FEED_LAYOUT = [
     href: "/apps",
     contentContainerClass: "liquid-wrapper",
     color: colors.purple,
-    visible: true,
+    visible: false,
   },
   {
     type: "LIQUID",
@@ -124,7 +124,7 @@ const FEED_LAYOUT = [
     href: "/learn",
     contentContainerClass: "liquid-wrapper",
     color: colors.cdGreen,
-    visible: true,
+    visible: false,
   },
   {
     type: "LIQUID",
@@ -135,7 +135,7 @@ const FEED_LAYOUT = [
     href: "/development",
     contentContainerClass: "liquid-wrapper",
     color: colors.nbOrange,
-    visible: true,
+    visible: false,
   },
   {
     type: "LIQUID",
@@ -146,7 +146,7 @@ const FEED_LAYOUT = [
     href: "/build",
     contentContainerClass: "liquid-wrapper",
     color: colors.blue,
-    visible: true,
+    visible: false,
   },
   {
     type: "LIQUID",
@@ -157,7 +157,7 @@ const FEED_LAYOUT = [
     href: "/jobs",
     contentContainerClass: "liquid-wrapper",
     color: colors.nbOrange,
-    visible: true,
+    visible: false,
   },
   {
     type: "LIQUID",
@@ -168,15 +168,15 @@ const FEED_LAYOUT = [
     href: "/interviews",
     contentContainerClass: "liquid-wrapper",
     color: colors.nbOrange,
-    visible: true,
+    visible: false,
     comingSoon: true,
     sortIdx: 100,
   },
   {
     type: "PRODUCTS",
     key: "products",
-    title: "#OtherProducts",
-    breadcrumbTitle: "Other Products",
+    title: "#Products",
+    breadcrumbTitle: "Products",
     contentContainerClass: "products-wrapper",
     color: colors.blue,
     visible: true,

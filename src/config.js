@@ -23,8 +23,8 @@ const config = {
   SENTRY_URL,
   MIXPANEL_TRACKING_ID,
   POST_COUNT: 25,
-  appId: "CODE404",
-  appName: "Code404",
+  appId: "LIQUID_SEARCH",
+  appName: "Liquid Search",
   sponser: "https://www.buymeacoffee.com/mehullakhanpal",
   FIREBASE: {
     FIREBASE_API_KEY,

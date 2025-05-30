@@ -19,16 +19,15 @@ const Home = () => {
 export default Home;
 
 export const getStaticProps = wrapper.getStaticProps((store) => async () => {
-  const { posts } = await getPosts();
-  const keybindings = await getKeybindings();
-  const liquid = await getLiquid();
-
-  store.dispatch(
-    updateFeedData({
-      posts,
-      keybindings,
-      ...liquid,
-    })
-  );
-  store.dispatch(setLiquidData(liquid));
+  // const { posts } = await getPosts();
+  // const keybindings = await getKeybindings();
+  // const liquid = await getLiquid();
+  // store.dispatch(
+  //   updateFeedData({
+  //     posts,
+  //     keybindings,
+  //     ...liquid,
+  //   })
+  // );
+  // store.dispatch(setLiquidData(liquid));
 });

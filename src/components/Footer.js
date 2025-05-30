@@ -9,23 +9,28 @@ const getCopyright = () => `${appName} ©${new Date().getFullYear()}`;
 const icons = [
   {
     id: "Facebook",
-    href: "https://www.facebook.com/code404.co/",
+    href: "https://www.facebook.com/liquidsearch.co/",
     type: "facebook",
   },
   {
     id: "Instagram",
-    href: "https://www.instagram.com/code404.co/",
+    href: "https://www.instagram.com/liquidsearch.co/",
     type: "instagram",
   },
   {
     id: "Twitter",
-    href: "https://twitter.com/code404_co",
+    href: "https://twitter.com/liquidsearch_co",
     type: "twitter",
   },
   {
     id: "Linkedin",
-    href: "https://www.linkedin.com/company/code404/",
+    href: "https://www.linkedin.com/company/liquidsearch/",
     type: "linkedin",
+  },
+  {
+    id: "Youtube",
+    href: "https://www.youtube.com/@liquidsearch",
+    type: "youtube",
   },
 ];
 
